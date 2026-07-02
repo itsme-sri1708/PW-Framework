@@ -10,7 +10,14 @@ test.describe('Claims Page Validation',()=>{
         
     })
 
-    test('TC009-Verify Claims page navigation', async ({})=>{
+    test('TC009-Verify Claims page navigation',async ({})=>{
+        await claimspage.navigatetoDashboard('Claims');
+        await claimspage.claimHomePage();
+
+    })
+
+
+    test('Verify Claims page Header Validaion', async ({})=>{
         
         await claimspage.claimsPageNavigation(claimsPageHeader);
 
